@@ -1,7 +1,9 @@
 
 <!doctype html>
 <html lang="en" class="no-js">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  
+<!-- Mirrored from  firststeptocp.com/num_methods/roots_newton.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2022 18:44:38 GMT -->
+ <meta http-equiv="content-type" content="text/html;charset=utf-8" /> 
 <head>
     
       <meta charset="utf-8">
@@ -9,19 +11,19 @@
       
       
       
-      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
-        <title>First Step to CP</title>
+        <title>Newton's method for finding roots - Algorithms for Competitive Programming</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -36,9 +38,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -49,7 +51,7 @@
 
 
   <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-85220282-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
-  <script async src="../www.google-analytics.com/analytics.js"></script>
+  <script async src="../../www.google-analytics.com/analytics.js"></script>
 
 
     
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algorithms-for-competitive-programming" class="md-skip">
+        <a href="#newtons-method-for-finding-roots" class="md-skip">
           Skip to content
         </a>
       
@@ -86,6 +88,11 @@
     </div>
     
     
+      <!-- overwrite:
+- scroll to top when clicking title
+- go to main page when clicking the site title
+- remove the menu button for mobile
+-->
 
 
 <header class="md-header" data-md-component="header">
@@ -96,17 +103,17 @@
     }
   </script>
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index-2.html" title="First Step to CP" class="md-header__button md-logo" aria-label="First Step to CP" data-md-component="logo">
+    <a href="../index-2.html" title="Algorithms for Competitive Programming" class="md-header__button md-logo" aria-label="Algorithms for Competitive Programming" data-md-component="logo">
       
-  <img src="favicon.ico" alt="logo">
+  <img src="../favicon.ico" alt="logo">
 
     </a>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            <a href="index-2.html" title="First Step to CP" aria-label="First Step to CP" data-md-component="logo">
-              First Step to CP
+            <a href="../index-2.html" title="Algorithms for Competitive Programming" aria-label="Algorithms for Competitive Programming" data-md-component="logo">
+              Algorithms for Competitive Programming
             </a>
           </span>
         </div>
@@ -114,7 +121,7 @@
           <span class="md-ellipsis">
             <a href="#" onclick="scrollToTop()">
               
-                Main Page
+                Newton's method for finding roots
               
             </a>
           </span>
@@ -151,12 +158,11 @@
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
-  
+   
 </div>
     
     
-      
-    
+            
   </nav>
   
 </header>
@@ -181,15 +187,15 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index-2.html" title="First Step to CP" class="md-nav__button md-logo" aria-label="First Step to CP" data-md-component="logo">
+    <a href="../index-2.html" title="Algorithms for Competitive Programming" class="md-nav__button md-logo" aria-label="Algorithms for Competitive Programming" data-md-component="logo">
       
-  <img src="favicon.ico" alt="logo">
+  <img src="../favicon.ico" alt="logo">
 
     </a>
-    First Step to CP
+    Algorithms for Competitive Programming
   </label>
   
-    
+     
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -199,132 +205,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Main Page
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index-2.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index-2.html" class="md-nav__link">
         Main Page
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        
-      
-        <li class="md-nav__item">
-  <a href="#articles" class="md-nav__link">
-    Articles
-  </a>
-  
-    <nav class="md-nav" aria-label="Articles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#algebra" class="md-nav__link">
-    Algebra
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-structures" class="md-nav__link">
-    Data Structures
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamic-programming" class="md-nav__link">
-    Dynamic Programming
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#string-processing" class="md-nav__link">
-    String Processing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linear-algebra" class="md-nav__link">
-    Linear Algebra
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#combinatorics" class="md-nav__link">
-    Combinatorics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numerical-methods" class="md-nav__link">
-    Numerical Methods
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#geometry" class="md-nav__link">
-    Geometry
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graphs" class="md-nav__link">
-    Graphs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#miscellaneous" class="md-nav__link">
-    Miscellaneous
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -337,7 +222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="contrib.html" class="md-nav__link">
+      <a href="../contrib.html" class="md-nav__link">
         How to Contribute
       </a>
     </li>
@@ -352,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="preview.html" class="md-nav__link">
+      <a href="../preview.html" class="md-nav__link">
         Preview
       </a>
     </li>
@@ -393,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/all-submasks.html" class="md-nav__link">
+      <a href="../algebra/all-submasks.html" class="md-nav__link">
         Submask Enumeration
       </a>
     </li>
@@ -407,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/balanced-ternary.html" class="md-nav__link">
+      <a href="../algebra/balanced-ternary.html" class="md-nav__link">
         Balanced Ternary
       </a>
     </li>
@@ -421,7 +306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/big-integer.html" class="md-nav__link">
+      <a href="../algebra/big-integer.html" class="md-nav__link">
         Arbitrary-Precision Arithmetic
       </a>
     </li>
@@ -435,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/binary-exp.html" class="md-nav__link">
+      <a href="../algebra/binary-exp.html" class="md-nav__link">
         Binary Exponentiation
       </a>
     </li>
@@ -449,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/chinese-remainder-theorem.html" class="md-nav__link">
+      <a href="../algebra/chinese-remainder-theorem.html" class="md-nav__link">
         Chinese Remainder Theorem
       </a>
     </li>
@@ -463,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/discrete-log.html" class="md-nav__link">
+      <a href="../algebra/discrete-log.html" class="md-nav__link">
         Discrete Logarithm
       </a>
     </li>
@@ -477,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/discrete-root.html" class="md-nav__link">
+      <a href="../algebra/discrete-root.html" class="md-nav__link">
         Discrete Root
       </a>
     </li>
@@ -491,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/divisors.html" class="md-nav__link">
+      <a href="../algebra/divisors.html" class="md-nav__link">
         Number of divisors / sum of divisors
       </a>
     </li>
@@ -505,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/euclid-algorithm.html" class="md-nav__link">
+      <a href="../algebra/euclid-algorithm.html" class="md-nav__link">
         Euclidean algorithm for computing the greatest common divisor
       </a>
     </li>
@@ -519,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/extended-euclid-algorithm.html" class="md-nav__link">
+      <a href="../algebra/extended-euclid-algorithm.html" class="md-nav__link">
         Extended Euclidean Algorithm
       </a>
     </li>
@@ -533,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/factorial-divisors.html" class="md-nav__link">
+      <a href="../algebra/factorial-divisors.html" class="md-nav__link">
         Finding Power of Factorial Divisor
       </a>
     </li>
@@ -547,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/factorial-modulo.html" class="md-nav__link">
+      <a href="../algebra/factorial-modulo.html" class="md-nav__link">
         Factorial modulo p
       </a>
     </li>
@@ -561,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/factorization.html" class="md-nav__link">
+      <a href="../algebra/factorization.html" class="md-nav__link">
         Integer factorization
       </a>
     </li>
@@ -575,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/fft.html" class="md-nav__link">
+      <a href="../algebra/fft.html" class="md-nav__link">
         Fast Fourier transform
       </a>
     </li>
@@ -589,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/fibonacci-numbers.html" class="md-nav__link">
+      <a href="../algebra/fibonacci-numbers.html" class="md-nav__link">
         Fibonacci Numbers
       </a>
     </li>
@@ -603,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/gray-code.html" class="md-nav__link">
+      <a href="../algebra/gray-code.html" class="md-nav__link">
         Gray code
       </a>
     </li>
@@ -617,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/linear-diophantine-equation.html" class="md-nav__link">
+      <a href="../algebra/linear-diophantine-equation.html" class="md-nav__link">
         Linear Diophantine Equation
       </a>
     </li>
@@ -631,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/linear_congruence_equation.html" class="md-nav__link">
+      <a href="../algebra/linear_congruence_equation.html" class="md-nav__link">
         Linear Congruence Equation
       </a>
     </li>
@@ -645,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/module-inverse.html" class="md-nav__link">
+      <a href="../algebra/module-inverse.html" class="md-nav__link">
         Modular Multiplicative Inverse
       </a>
     </li>
@@ -659,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/montgomery_multiplication.html" class="md-nav__link">
+      <a href="../algebra/montgomery_multiplication.html" class="md-nav__link">
         Montgomery Multiplication
       </a>
     </li>
@@ -673,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/phi-function.html" class="md-nav__link">
+      <a href="../algebra/phi-function.html" class="md-nav__link">
         Euler's totient function
       </a>
     </li>
@@ -687,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/polynomial.html" class="md-nav__link">
+      <a href="../algebra/polynomial.html" class="md-nav__link">
         Operations on polynomials and series
       </a>
     </li>
@@ -701,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/primality_tests.html" class="md-nav__link">
+      <a href="../algebra/primality_tests.html" class="md-nav__link">
         Primality tests
       </a>
     </li>
@@ -715,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/prime-sieve-linear.html" class="md-nav__link">
+      <a href="../algebra/prime-sieve-linear.html" class="md-nav__link">
         Linear Sieve
       </a>
     </li>
@@ -729,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/primitive-root.html" class="md-nav__link">
+      <a href="../algebra/primitive-root.html" class="md-nav__link">
         Primitive Root
       </a>
     </li>
@@ -743,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algebra/sieve-of-eratosthenes.html" class="md-nav__link">
+      <a href="../algebra/sieve-of-eratosthenes.html" class="md-nav__link">
         Sieve of Eratosthenes
       </a>
     </li>
@@ -791,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/binomial-coefficients.html" class="md-nav__link">
+      <a href="../combinatorics/binomial-coefficients.html" class="md-nav__link">
         Binomial Coefficients
       </a>
     </li>
@@ -805,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/bishops-on-chessboard.html" class="md-nav__link">
+      <a href="../combinatorics/bishops-on-chessboard.html" class="md-nav__link">
         Placing Bishops on a Chessboard
       </a>
     </li>
@@ -819,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/bracket_sequences.html" class="md-nav__link">
+      <a href="../combinatorics/bracket_sequences.html" class="md-nav__link">
         Balanced bracket sequences
       </a>
     </li>
@@ -833,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/burnside.html" class="md-nav__link">
+      <a href="../combinatorics/burnside.html" class="md-nav__link">
         Burnside's lemma / Pólya enumeration theorem
       </a>
     </li>
@@ -847,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/catalan-numbers.html" class="md-nav__link">
+      <a href="../combinatorics/catalan-numbers.html" class="md-nav__link">
         Catalan Numbers
       </a>
     </li>
@@ -861,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/counting_labeled_graphs.html" class="md-nav__link">
+      <a href="../combinatorics/counting_labeled_graphs.html" class="md-nav__link">
         Counting labeled graphs
       </a>
     </li>
@@ -875,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/generating_combinations.html" class="md-nav__link">
+      <a href="../combinatorics/generating_combinations.html" class="md-nav__link">
         Generating all K-combinations
       </a>
     </li>
@@ -889,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/inclusion-exclusion.html" class="md-nav__link">
+      <a href="../combinatorics/inclusion-exclusion.html" class="md-nav__link">
         The Inclusion-Exclusion Principle
       </a>
     </li>
@@ -903,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="combinatorics/stars_and_bars.html" class="md-nav__link">
+      <a href="../combinatorics/stars_and_bars.html" class="md-nav__link">
         Stars and bars
       </a>
     </li>
@@ -951,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/deleting_in_log_n.html" class="md-nav__link">
+      <a href="../data_structures/deleting_in_log_n.html" class="md-nav__link">
         Deleting from a data structure in O(T(n)log n)
       </a>
     </li>
@@ -965,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/disjoint_set_union.html" class="md-nav__link">
+      <a href="../data_structures/disjoint_set_union.html" class="md-nav__link">
         Disjoint Set Union
       </a>
     </li>
@@ -979,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/fenwick.html" class="md-nav__link">
+      <a href="../data_structures/fenwick.html" class="md-nav__link">
         Fenwick Tree
       </a>
     </li>
@@ -993,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/randomized_heap.html" class="md-nav__link">
+      <a href="../data_structures/randomized_heap.html" class="md-nav__link">
         Randomized Heap
       </a>
     </li>
@@ -1007,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/segment_tree.html" class="md-nav__link">
+      <a href="../data_structures/segment_tree.html" class="md-nav__link">
         Segment Tree
       </a>
     </li>
@@ -1021,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/sparse-table.html" class="md-nav__link">
+      <a href="../data_structures/sparse-table.html" class="md-nav__link">
         Sparse Table
       </a>
     </li>
@@ -1035,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/sqrt-tree.html" class="md-nav__link">
+      <a href="../data_structures/sqrt-tree.html" class="md-nav__link">
         Sqrt Tree
       </a>
     </li>
@@ -1049,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/sqrt_decomposition.html" class="md-nav__link">
+      <a href="../data_structures/sqrt_decomposition.html" class="md-nav__link">
         Sqrt Decomposition
       </a>
     </li>
@@ -1063,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/stack_queue_modification.html" class="md-nav__link">
+      <a href="../data_structures/stack_queue_modification.html" class="md-nav__link">
         Minimum stack / Minimum queue
       </a>
     </li>
@@ -1077,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data_structures/treap.html" class="md-nav__link">
+      <a href="../data_structures/treap.html" class="md-nav__link">
         Treap (Cartesian tree)
       </a>
     </li>
@@ -1125,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dynamic_programming/divide-and-conquer-dp.html" class="md-nav__link">
+      <a href="../dynamic_programming/divide-and-conquer-dp.html" class="md-nav__link">
         Divide and Conquer DP
       </a>
     </li>
@@ -1139,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dynamic_programming/profile-dynamics.html" class="md-nav__link">
+      <a href="../dynamic_programming/profile-dynamics.html" class="md-nav__link">
         Dynamic Programming on Broken Profile. Problem "Parquet"
       </a>
     </li>
@@ -1153,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dynamic_programming/zero_matrix.html" class="md-nav__link">
+      <a href="../dynamic_programming/zero_matrix.html" class="md-nav__link">
         Finding the largest zero submatrix
       </a>
     </li>
@@ -1201,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="game_theory/games_on_graphs.html" class="md-nav__link">
+      <a href="../game_theory/games_on_graphs.html" class="md-nav__link">
         Games on arbitrary graphs
       </a>
     </li>
@@ -1215,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="game_theory/sprague-grundy-nim.html" class="md-nav__link">
+      <a href="../game_theory/sprague-grundy-nim.html" class="md-nav__link">
         Sprague-Grundy theorem. Nim
       </a>
     </li>
@@ -1263,7 +1148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/area-of-simple-polygon.html" class="md-nav__link">
+      <a href="../geometry/area-of-simple-polygon.html" class="md-nav__link">
         Finding area of simple polygon in O(N)
       </a>
     </li>
@@ -1277,7 +1162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/basic-geometry.html" class="md-nav__link">
+      <a href="../geometry/basic-geometry.html" class="md-nav__link">
         Basic Geometry
       </a>
     </li>
@@ -1291,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/check-segments-intersection.html" class="md-nav__link">
+      <a href="../geometry/check-segments-intersection.html" class="md-nav__link">
         Check if two segments intersect
       </a>
     </li>
@@ -1305,7 +1190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/circle-circle-intersection.html" class="md-nav__link">
+      <a href="../geometry/circle-circle-intersection.html" class="md-nav__link">
         Circle-Circle Intersection
       </a>
     </li>
@@ -1319,7 +1204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/circle-line-intersection.html" class="md-nav__link">
+      <a href="../geometry/circle-line-intersection.html" class="md-nav__link">
         Circle-Line Intersection
       </a>
     </li>
@@ -1333,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/convex-hull.html" class="md-nav__link">
+      <a href="../geometry/convex-hull.html" class="md-nav__link">
         Convex Hull construction
       </a>
     </li>
@@ -1347,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/convex_hull_trick.html" class="md-nav__link">
+      <a href="../geometry/convex_hull_trick.html" class="md-nav__link">
         Convex hull trick and Li Chao tree
       </a>
     </li>
@@ -1361,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/delaunay.html" class="md-nav__link">
+      <a href="../geometry/delaunay.html" class="md-nav__link">
         Delaunay triangulation and Voronoi diagram
       </a>
     </li>
@@ -1375,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/halfplane-intersection.html" class="md-nav__link">
+      <a href="../geometry/halfplane-intersection.html" class="md-nav__link">
         Half-plane intersection
       </a>
     </li>
@@ -1389,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/intersecting_segments.html" class="md-nav__link">
+      <a href="../geometry/intersecting_segments.html" class="md-nav__link">
         Search for a pair of intersecting segments
       </a>
     </li>
@@ -1403,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/lattice-points.html" class="md-nav__link">
+      <a href="../geometry/lattice-points.html" class="md-nav__link">
         Lattice points inside non-lattice polygon
       </a>
     </li>
@@ -1417,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/length-of-segments-union.html" class="md-nav__link">
+      <a href="../geometry/length-of-segments-union.html" class="md-nav__link">
         Length of the union of segments
       </a>
     </li>
@@ -1431,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/lines-intersection.html" class="md-nav__link">
+      <a href="../geometry/lines-intersection.html" class="md-nav__link">
         Intersection Point of Lines
       </a>
     </li>
@@ -1445,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/minkowski.html" class="md-nav__link">
+      <a href="../geometry/minkowski.html" class="md-nav__link">
         Minkowski sum of convex polygons
       </a>
     </li>
@@ -1459,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/nearest_points.html" class="md-nav__link">
+      <a href="../geometry/nearest_points.html" class="md-nav__link">
         Finding the nearest pair of points
       </a>
     </li>
@@ -1473,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/oriented-triangle-area.html" class="md-nav__link">
+      <a href="../geometry/oriented-triangle-area.html" class="md-nav__link">
         Oriented area of a triangle
       </a>
     </li>
@@ -1487,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/picks-theorem.html" class="md-nav__link">
+      <a href="../geometry/picks-theorem.html" class="md-nav__link">
         Pick's Theorem
       </a>
     </li>
@@ -1501,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/point-in-convex-polygon.html" class="md-nav__link">
+      <a href="../geometry/point-in-convex-polygon.html" class="md-nav__link">
         Check if point belongs to the convex polygon in $O(\log N)$
       </a>
     </li>
@@ -1515,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/point-location.html" class="md-nav__link">
+      <a href="../geometry/point-location.html" class="md-nav__link">
         Point location in O(log n)
       </a>
     </li>
@@ -1529,7 +1414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/segment-to-line.html" class="md-nav__link">
+      <a href="../geometry/segment-to-line.html" class="md-nav__link">
         Finding the equation of a line for a segment
       </a>
     </li>
@@ -1543,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/segments-intersection.html" class="md-nav__link">
+      <a href="../geometry/segments-intersection.html" class="md-nav__link">
         Finding intersection of two segments
       </a>
     </li>
@@ -1557,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/tangents-to-two-circles.html" class="md-nav__link">
+      <a href="../geometry/tangents-to-two-circles.html" class="md-nav__link">
         Finding common tangents to two circles
       </a>
     </li>
@@ -1571,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="geometry/vertical_decomposition.html" class="md-nav__link">
+      <a href="../geometry/vertical_decomposition.html" class="md-nav__link">
         Vertical decomposition
       </a>
     </li>
@@ -1619,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/01_bfs.html" class="md-nav__link">
+      <a href="../graph/01_bfs.html" class="md-nav__link">
         0-1 BFS
       </a>
     </li>
@@ -1633,7 +1518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/2SAT.html" class="md-nav__link">
+      <a href="../graph/2SAT.html" class="md-nav__link">
         2-SAT
       </a>
     </li>
@@ -1647,7 +1532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/Assignment-problem-min-flow.html" class="md-nav__link">
+      <a href="../graph/Assignment-problem-min-flow.html" class="md-nav__link">
         Solving assignment problem using min-cost-flow
       </a>
     </li>
@@ -1661,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/all-pair-shortest-path-floyd-warshall.html" class="md-nav__link">
+      <a href="../graph/all-pair-shortest-path-floyd-warshall.html" class="md-nav__link">
         Floyd-Warshall Algorithm
       </a>
     </li>
@@ -1675,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/bellman_ford.html" class="md-nav__link">
+      <a href="../graph/bellman_ford.html" class="md-nav__link">
         Bellman-Ford Algorithm
       </a>
     </li>
@@ -1689,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/bipartite-check.html" class="md-nav__link">
+      <a href="../graph/bipartite-check.html" class="md-nav__link">
         Check whether a graph is bipartite
       </a>
     </li>
@@ -1703,7 +1588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/breadth-first-search.html" class="md-nav__link">
+      <a href="../graph/breadth-first-search.html" class="md-nav__link">
         Breadth-first search
       </a>
     </li>
@@ -1717,7 +1602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/bridge-searching-online.html" class="md-nav__link">
+      <a href="../graph/bridge-searching-online.html" class="md-nav__link">
         Finding Bridges Online
       </a>
     </li>
@@ -1731,7 +1616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/bridge-searching.html" class="md-nav__link">
+      <a href="../graph/bridge-searching.html" class="md-nav__link">
         Finding bridges in a graph in O(N+M)
       </a>
     </li>
@@ -1745,7 +1630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/cutpoints.html" class="md-nav__link">
+      <a href="../graph/cutpoints.html" class="md-nav__link">
         Finding articulation points in a graph in O(N+M)
       </a>
     </li>
@@ -1759,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/depth-first-search.html" class="md-nav__link">
+      <a href="../graph/depth-first-search.html" class="md-nav__link">
         Depth First Search
       </a>
     </li>
@@ -1773,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/desopo_pape.html" class="md-nav__link">
+      <a href="../graph/desopo_pape.html" class="md-nav__link">
         D´Esopo-Pape algorithm
       </a>
     </li>
@@ -1787,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/dijkstra.html" class="md-nav__link">
+      <a href="../graph/dijkstra.html" class="md-nav__link">
         Dijkstra Algorithm
       </a>
     </li>
@@ -1801,7 +1686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/dijkstra_sparse.html" class="md-nav__link">
+      <a href="../graph/dijkstra_sparse.html" class="md-nav__link">
         Dijkstra on sparse graphs
       </a>
     </li>
@@ -1815,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/dinic.html" class="md-nav__link">
+      <a href="../graph/dinic.html" class="md-nav__link">
         Maximum flow - Dinic's algorithm
       </a>
     </li>
@@ -1829,7 +1714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/edge_vertex_connectivity.html" class="md-nav__link">
+      <a href="../graph/edge_vertex_connectivity.html" class="md-nav__link">
         Edge connectivity / Vertex connectivity
       </a>
     </li>
@@ -1843,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/edmonds_karp.html" class="md-nav__link">
+      <a href="../graph/edmonds_karp.html" class="md-nav__link">
         Maximum flow - Ford-Fulkerson and Edmonds-Karp
       </a>
     </li>
@@ -1857,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/euler_path.html" class="md-nav__link">
+      <a href="../graph/euler_path.html" class="md-nav__link">
         Finding the Eulerian path in O(M)
       </a>
     </li>
@@ -1871,7 +1756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/finding-cycle.html" class="md-nav__link">
+      <a href="../graph/finding-cycle.html" class="md-nav__link">
         Checking a graph for acyclicity and finding a cycle in O(M)
       </a>
     </li>
@@ -1885,7 +1770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/finding-negative-cycle-in-graph.html" class="md-nav__link">
+      <a href="../graph/finding-negative-cycle-in-graph.html" class="md-nav__link">
         Finding a negative cycle in the graph
       </a>
     </li>
@@ -1899,7 +1784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/fixed_length_paths.html" class="md-nav__link">
+      <a href="../graph/fixed_length_paths.html" class="md-nav__link">
         Number of paths of fixed length / Shortest paths of fixed length
       </a>
     </li>
@@ -1913,7 +1798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/flow_with_demands.html" class="md-nav__link">
+      <a href="../graph/flow_with_demands.html" class="md-nav__link">
         Flows with demands
       </a>
     </li>
@@ -1927,7 +1812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/hld.html" class="md-nav__link">
+      <a href="../graph/hld.html" class="md-nav__link">
         Heavy-light decomposition
       </a>
     </li>
@@ -1941,7 +1826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/kirchhoff-theorem.html" class="md-nav__link">
+      <a href="../graph/kirchhoff-theorem.html" class="md-nav__link">
         Kirchhoff's theorem. Finding the number of spanning trees
       </a>
     </li>
@@ -1955,7 +1840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/kuhn_maximum_bipartite_matching.html" class="md-nav__link">
+      <a href="../graph/kuhn_maximum_bipartite_matching.html" class="md-nav__link">
         Kuhn's Algorithm for Maximum Bipartite Matching
       </a>
     </li>
@@ -1969,7 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/lca.html" class="md-nav__link">
+      <a href="../graph/lca.html" class="md-nav__link">
         Lowest Common Ancestor - O(sqrt(N)) and O(log N) with O(N) preprocessing
       </a>
     </li>
@@ -1983,7 +1868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/lca_binary_lifting.html" class="md-nav__link">
+      <a href="../graph/lca_binary_lifting.html" class="md-nav__link">
         Lowest Common Ancestor - Binary Lifting
       </a>
     </li>
@@ -1997,7 +1882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/lca_farachcoltonbender.html" class="md-nav__link">
+      <a href="../graph/lca_farachcoltonbender.html" class="md-nav__link">
         Lowest Common Ancestor - Farach-Colton and Bender Algorithm
       </a>
     </li>
@@ -2011,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/lca_tarjan.html" class="md-nav__link">
+      <a href="../graph/lca_tarjan.html" class="md-nav__link">
         Lowest Common Ancestor - Tarjan's off-line algorithm
       </a>
     </li>
@@ -2025,7 +1910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/min_cost_flow.html" class="md-nav__link">
+      <a href="../graph/min_cost_flow.html" class="md-nav__link">
         Minimum-cost flow - Successive shortest path algorithm
       </a>
     </li>
@@ -2039,7 +1924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/mpm.html" class="md-nav__link">
+      <a href="../graph/mpm.html" class="md-nav__link">
         Maximum flow - MPM algorithm
       </a>
     </li>
@@ -2053,7 +1938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/mst_kruskal.html" class="md-nav__link">
+      <a href="../graph/mst_kruskal.html" class="md-nav__link">
         Minimum spanning tree - Kruskal's algorithm
       </a>
     </li>
@@ -2067,7 +1952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/mst_kruskal_with_dsu.html" class="md-nav__link">
+      <a href="../graph/mst_kruskal_with_dsu.html" class="md-nav__link">
         Minimum spanning tree - Kruskal with Disjoint Set Union
       </a>
     </li>
@@ -2081,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/mst_prim.html" class="md-nav__link">
+      <a href="../graph/mst_prim.html" class="md-nav__link">
         Minimum spanning tree - Prim's algorithm
       </a>
     </li>
@@ -2095,7 +1980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/pruefer_code.html" class="md-nav__link">
+      <a href="../graph/pruefer_code.html" class="md-nav__link">
         Prüfer code
       </a>
     </li>
@@ -2109,7 +1994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/push-relabel-faster.html" class="md-nav__link">
+      <a href="../graph/push-relabel-faster.html" class="md-nav__link">
         Maximum flow - Push-relabel method improved
       </a>
     </li>
@@ -2123,7 +2008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/push-relabel.html" class="md-nav__link">
+      <a href="../graph/push-relabel.html" class="md-nav__link">
         Maximum flow - Push-relabel algorithm
       </a>
     </li>
@@ -2137,7 +2022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/rmq_linear.html" class="md-nav__link">
+      <a href="../graph/rmq_linear.html" class="md-nav__link">
         Solve RMQ (Range Minimum Query) by finding LCA (Lowest Common Ancestor)
       </a>
     </li>
@@ -2151,7 +2036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/search-for-connected-components.html" class="md-nav__link">
+      <a href="../graph/search-for-connected-components.html" class="md-nav__link">
         Search for connected components in a graph
       </a>
     </li>
@@ -2165,7 +2050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/second_best_mst.html" class="md-nav__link">
+      <a href="../graph/second_best_mst.html" class="md-nav__link">
         Second Best Minimum Spanning Tree
       </a>
     </li>
@@ -2179,7 +2064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/strong-orientation.html" class="md-nav__link">
+      <a href="../graph/strong-orientation.html" class="md-nav__link">
         Strong Orientation
       </a>
     </li>
@@ -2193,7 +2078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/strongly-connected-components.html" class="md-nav__link">
+      <a href="../graph/strongly-connected-components.html" class="md-nav__link">
         Finding strongly connected components / Building condensation graph
       </a>
     </li>
@@ -2207,7 +2092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/topological-sort.html" class="md-nav__link">
+      <a href="../graph/topological-sort.html" class="md-nav__link">
         Topological Sorting
       </a>
     </li>
@@ -2221,7 +2106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph/tree_painting.html" class="md-nav__link">
+      <a href="../graph/tree_painting.html" class="md-nav__link">
         Paint the edges of the tree
       </a>
     </li>
@@ -2269,7 +2154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linear_algebra/determinant-gauss.html" class="md-nav__link">
+      <a href="../linear_algebra/determinant-gauss.html" class="md-nav__link">
         Calculating the determinant of a matrix by Gauss
       </a>
     </li>
@@ -2283,7 +2168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linear_algebra/determinant-kraut.html" class="md-nav__link">
+      <a href="../linear_algebra/determinant-kraut.html" class="md-nav__link">
         Calculating the determinant using Kraut method
       </a>
     </li>
@@ -2297,7 +2182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linear_algebra/linear-system-gauss.html" class="md-nav__link">
+      <a href="../linear_algebra/linear-system-gauss.html" class="md-nav__link">
         Gauss method for solving system of linear equations
       </a>
     </li>
@@ -2311,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linear_algebra/rank-matrix.html" class="md-nav__link">
+      <a href="../linear_algebra/rank-matrix.html" class="md-nav__link">
         Finding the rank of a matrix
       </a>
     </li>
@@ -2331,12 +2216,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
       
       
       
@@ -2357,11 +2244,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="num_methods/roots_newton.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Newton's method for finding roots
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="roots_newton.html" class="md-nav__link md-nav__link--active">
         Newton's method for finding roots
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-for-calculating-the-square-root" class="md-nav__link">
+    Application for calculating the square root
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    Practice Problems
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2373,7 +2315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="num_methods/simpson-integration.html" class="md-nav__link">
+      <a href="simpson-integration.html" class="md-nav__link">
         Integration by Simpson's formula
       </a>
     </li>
@@ -2387,7 +2329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="num_methods/ternary_search.html" class="md-nav__link">
+      <a href="ternary_search.html" class="md-nav__link">
         Ternary Search
       </a>
     </li>
@@ -2435,7 +2377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="others/15-puzzle.html" class="md-nav__link">
+      <a href="../others/15-puzzle.html" class="md-nav__link">
         15 Puzzle Game: Existence Of The Solution
       </a>
     </li>
@@ -2449,7 +2391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="others/josephus_problem.html" class="md-nav__link">
+      <a href="../others/josephus_problem.html" class="md-nav__link">
         Josephus Problem
       </a>
     </li>
@@ -2463,7 +2405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="others/maximum_average_segment.html" class="md-nav__link">
+      <a href="../others/maximum_average_segment.html" class="md-nav__link">
         Search the subarray with the maximum/minimum sum
       </a>
     </li>
@@ -2477,7 +2419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="others/stern_brocot_tree_farey_sequences.html" class="md-nav__link">
+      <a href="../others/stern_brocot_tree_farey_sequences.html" class="md-nav__link">
         The Stern-Brocot tree and Farey sequences
       </a>
     </li>
@@ -2525,7 +2467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="schedules/schedule-with-completion-duration.html" class="md-nav__link">
+      <a href="../schedules/schedule-with-completion-duration.html" class="md-nav__link">
         Optimal schedule of jobs given their deadlines and durations
       </a>
     </li>
@@ -2539,7 +2481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="schedules/schedule_one_machine.html" class="md-nav__link">
+      <a href="../schedules/schedule_one_machine.html" class="md-nav__link">
         Scheduling jobs on one machine
       </a>
     </li>
@@ -2553,7 +2495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="schedules/schedule_two_machines.html" class="md-nav__link">
+      <a href="../schedules/schedule_two_machines.html" class="md-nav__link">
         Scheduling jobs on two machines
       </a>
     </li>
@@ -2601,7 +2543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sequences/k-th.html" class="md-nav__link">
+      <a href="../sequences/k-th.html" class="md-nav__link">
         K-th order statistic in O(N)
       </a>
     </li>
@@ -2615,7 +2557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sequences/longest_increasing_subsequence.html" class="md-nav__link">
+      <a href="../sequences/longest_increasing_subsequence.html" class="md-nav__link">
         Longest increasing subsequence
       </a>
     </li>
@@ -2629,7 +2571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sequences/rmq.html" class="md-nav__link">
+      <a href="../sequences/rmq.html" class="md-nav__link">
         Range Minimum Query
       </a>
     </li>
@@ -2677,7 +2619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/aho_corasick.html" class="md-nav__link">
+      <a href="../string/aho_corasick.html" class="md-nav__link">
         Aho-Corasick algorithm
       </a>
     </li>
@@ -2691,7 +2633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/expression_parsing.html" class="md-nav__link">
+      <a href="../string/expression_parsing.html" class="md-nav__link">
         Expression parsing
       </a>
     </li>
@@ -2705,7 +2647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/lyndon_factorization.html" class="md-nav__link">
+      <a href="../string/lyndon_factorization.html" class="md-nav__link">
         Lyndon factorization
       </a>
     </li>
@@ -2719,7 +2661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/main_lorentz.html" class="md-nav__link">
+      <a href="../string/main_lorentz.html" class="md-nav__link">
         Finding repetitions
       </a>
     </li>
@@ -2733,7 +2675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/manacher.html" class="md-nav__link">
+      <a href="../string/manacher.html" class="md-nav__link">
         Manacher's Algorithm - Finding all sub-palindromes in O(N)
       </a>
     </li>
@@ -2747,7 +2689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/prefix-function.html" class="md-nav__link">
+      <a href="../string/prefix-function.html" class="md-nav__link">
         Prefix function. Knuth–Morris–Pratt algorithm
       </a>
     </li>
@@ -2761,7 +2703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/rabin-karp.html" class="md-nav__link">
+      <a href="../string/rabin-karp.html" class="md-nav__link">
         Rabin-Karp Algorithm for string matching
       </a>
     </li>
@@ -2775,7 +2717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/string-hashing.html" class="md-nav__link">
+      <a href="../string/string-hashing.html" class="md-nav__link">
         String Hashing
       </a>
     </li>
@@ -2789,7 +2731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/suffix-array.html" class="md-nav__link">
+      <a href="../string/suffix-array.html" class="md-nav__link">
         Suffix Array
       </a>
     </li>
@@ -2803,7 +2745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/suffix-automaton.html" class="md-nav__link">
+      <a href="../string/suffix-automaton.html" class="md-nav__link">
         Suffix Automaton
       </a>
     </li>
@@ -2817,7 +2759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/suffix-tree-ukkonen.html" class="md-nav__link">
+      <a href="../string/suffix-tree-ukkonen.html" class="md-nav__link">
         Suffix Tree. Ukkonen's Algorithm
       </a>
     </li>
@@ -2831,7 +2773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="string/z-function.html" class="md-nav__link">
+      <a href="../string/z-function.html" class="md-nav__link">
         Z-function and its calculation
       </a>
     </li>
@@ -2871,92 +2813,26 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-        
+        <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#articles" class="md-nav__link">
-    Articles
+  <a href="#application-for-calculating-the-square-root" class="md-nav__link">
+    Application for calculating the square root
   </a>
-  
-    <nav class="md-nav" aria-label="Articles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#algebra" class="md-nav__link">
-    Algebra
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-structures" class="md-nav__link">
-    Data Structures
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamic-programming" class="md-nav__link">
-    Dynamic Programming
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#string-processing" class="md-nav__link">
-    String Processing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linear-algebra" class="md-nav__link">
-    Linear Algebra
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#combinatorics" class="md-nav__link">
-    Combinatorics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numerical-methods" class="md-nav__link">
-    Numerical Methods
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#geometry" class="md-nav__link">
-    Geometry
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graphs" class="md-nav__link">
-    Graphs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#miscellaneous" class="md-nav__link">
-    Miscellaneous
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
-        
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    Practice Problems
+  </a>
+  
+</li>
       
     </ul>
   
@@ -2972,9 +2848,9 @@
                 <script type="text/javascript">
 window.onload = function() {
 	const newIssueURL = "https://github.com/e-maxx-eng/e-maxx-eng/issues/new";
-  const issueTitle = `Problem on article "Main Page"`;
+  const issueTitle = `Problem on article "Newton's method for finding roots"`;
 	const issueBody = `
- **Article:** [Main Page](${window.location.href})
+ **Article:** [Newton's method for finding roots](${window.location.href})
 
 **Problem:**
 <!--
@@ -2987,321 +2863,68 @@ Describe the issue of this article in detail.
 </script>
 
 
-
-<h1 id="algorithms-for-competitive-programming">First Step to CP</h1>
-<p><em>The goal of this project is to translate the wonderful resource
-and descriptions of many algorithms
-and data structures especially popular in field of competitive programming.
-Moreover we want to improve the collected knowledge by extending the articles
-and adding new articles to the collection.
-<br><br>
-Team:- Code fellas<br>
-1) Vaishnavi <br>
-2) Vipin Kumar Yadav <br>
-3) Shubham Shamrao Kadam <br>
-4) Vivek Tiwari
-</em></p>
-
-<h2 id="articles">IDE</h2>
-<h3 id="algebra">Online Python Compiler</h3><ul>
-<li><a href="https://www.programiz.com/cpp-programming/online-compiler/">py compiler</a></li></ul>
-
-<h2 id="articles">Articles</h2>
-<h3 id="algebra">Algebra</h3>
+<h1 id="newtons-method-for-finding-roots">Newton's method for finding roots</h1>
+<p>This is an iterative method invented by Isaac Newton around 1664. However, this method is also sometimes called the Raphson method, since Raphson invented the same algorithm a few years after Newton, but his article was published much earlier.</p>
+<p>The task is as follows. Given the following equation:</p>
+<div class="arithmatex">\[f(x) = 0\]</div>
+<p>We want to solve the equation. More precisely, we want to find one of its roots (it is assumed that the root exists). It is assumed that <span class="arithmatex">\(f(x)\)</span> is continuous and differentiable on an interval <span class="arithmatex">\([a, b]\)</span>.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p>The input parameters of the algorithm consist of not only the function <span class="arithmatex">\(f(x)\)</span> but also the initial approximation - some <span class="arithmatex">\(x_0\)</span>, with which the algorithm starts.</p>
+<p>Suppose we have already calculated <span class="arithmatex">\(x_i\)</span>, calculate <span class="arithmatex">\(x_{i+1}\)</span> as follows. Draw the tangent to the graph of the function <span class="arithmatex">\(f(x)\)</span> at the point <span class="arithmatex">\(x = x_i\)</span>, and find the point of intersection of this tangent with the <span class="arithmatex">\(x\)</span>-axis. <span class="arithmatex">\(x_{i+1}\)</span> is set equal to the <span class="arithmatex">\(x\)</span>-coordinate of the point found, and we repeat the whole process from the beginning.</p>
+<p>It is not difficult to obtain the following formula:</p>
+<div class="arithmatex">\[ x_{i+1} = x_i - \frac{f(x_i)}{f^\prime(x_i)} \]</div>
+<p>It is intuitively clear that if the function <span class="arithmatex">\(f(x)\)</span> is "good" (smooth), and <span class="arithmatex">\(x_i\)</span> is close enough to the root, then <span class="arithmatex">\(x_{i+1}\)</span> will be even closer to the desired root.</p>
+<p>The rate of convergence is quadratic, which, conditionally speaking, means that the number of exact digits in the approximate value <span class="arithmatex">\(x_i\)</span> doubles with each iteration.</p>
+<h2 id="application-for-calculating-the-square-root">Application for calculating the square root</h2>
+<p>Let's use the calculation of square root as an example of Newton's method.</p>
+<p>If we substitute <span class="arithmatex">\(f(x) = x^2 - n\)</span>, then after simplifying the expression, we get:</p>
+<div class="arithmatex">\[ x_{i+1} = \frac{x_i + \frac{n}{x_i}}{2} \]</div>
+<p>The first typical variant of the problem is when a rational number <span class="arithmatex">\(n\)</span> is given, and its root must be calculated with some accuracy <code>eps</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="nf">sqrt_newton</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">eps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1E-15</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">nx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">nx</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">eps</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nx</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Another common variant of the problem is when we need to calculate the integer root (for the given <span class="arithmatex">\(n\)</span> find the largest <span class="arithmatex">\(x\)</span> such that <span class="arithmatex">\(x^2 \le n\)</span>). Here it is necessary to slightly change the termination condition of the algorithm, since it may happen that <span class="arithmatex">\(x\)</span> will start to "jump" near the answer. Therefore, we add a condition that if the value <span class="arithmatex">\(x\)</span> has decreased in the previous step, and it tries to increase at the current step, then the algorithm must be stopped.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">isqrt_newton</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">decreased</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">nx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">nx</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">nx</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">decreased</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">decreased</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nx</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nx</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Finally, we are given the third variant - for the case of bignum arithmetic. Since the number <span class="arithmatex">\(n\)</span> can be large enough, it makes sense to pay attention to the initial approximation. Obviously, the closer it is to the root, the faster the result will be achieved. It is simple enough and effective to take the initial approximation as the number <span class="arithmatex">\(2^{\textrm{bits}/2}\)</span>, where <span class="arithmatex">\(\textrm{bits}\)</span> is the number of bits in the number <span class="arithmatex">\(n\)</span>. Here is the Java code that demonstrates this variant:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">static</span> <span class="n">BigInteger</span> <span class="nf">isqrtNewton</span><span class="p">(</span><span class="n">BigInteger</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">BigInteger</span> <span class="n">a</span> <span class="o">=</span> <span class="n">BigInteger</span><span class="p">.</span><span class="na">ONE</span><span class="p">.</span><span class="na">shiftLeft</span><span class="p">(</span><span class="n">n</span><span class="p">.</span><span class="na">bitLength</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="kt">boolean</span> <span class="n">p_dec</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+        <span class="n">BigInteger</span> <span class="n">b</span> <span class="o">=</span> <span class="n">n</span><span class="p">.</span><span class="na">divide</span><span class="p">(</span><span class="n">a</span><span class="p">).</span><span class="na">add</span><span class="p">(</span><span class="n">a</span><span class="p">).</span><span class="na">shiftRight</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">a</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">p_dec</span><span class="p">)</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="n">p_dec</span> <span class="o">=</span> <span class="n">a</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">a</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>For example, this code is executed in <span class="arithmatex">\(60\)</span> milliseconds for <span class="arithmatex">\(n = 10^{1000}\)</span>, and if we remove the improved selection of the initial approximation (just starting with <span class="arithmatex">\(1\)</span>), then it will be executed in about <span class="arithmatex">\(120\)</span> milliseconds.</p>
+<h2 id="practice-problems">Practice Problems</h2>
 <ul>
-<li><strong>Fundamentals</strong><ul>
-<li><a href="algebra/binary-exp.html">Binary Exponentiation</a></li>
-<li><a href="algebra/euclid-algorithm.html">Euclidean algorithm for computing the greatest common divisor</a></li>
-<li><a href="algebra/extended-euclid-algorithm.html">Extended Euclidean Algorithm</a></li>
-<li><a href="algebra/linear-diophantine-equation.html">Linear Diophantine Equations</a></li>
-<li><a href="algebra/fibonacci-numbers.html">Fibonacci Numbers</a></li>
+<li><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=16&amp;page=show_problem&amp;problem=1369">UVa 10428 - The Roots</a></li>
 </ul>
-</li>
-<li><strong>Prime numbers</strong><ul>
-<li><a href="algebra/sieve-of-eratosthenes.html">Sieve of Eratosthenes</a></li>
-<li><a href="algebra/prime-sieve-linear.html">Linear Sieve</a></li>
-<li><a href="algebra/primality_tests.html">Primality tests</a></li>
-<li><a href="algebra/factorization.html">Integer factorization</a></li>
-</ul>
-</li>
-<li><strong>Number-theoretic functions</strong><ul>
-<li><a href="algebra/phi-function.html">Euler's totient function</a></li>
-<li><a href="algebra/divisors.html">Number of divisors / sum of divisors</a></li>
-</ul>
-</li>
-<li><strong>Modular arithmetic</strong><ul>
-<li><a href="algebra/module-inverse.html">Modular Inverse</a></li>
-<li><a href="algebra/linear_congruence_equation.html">Linear Congruence Equation</a></li>
-<li><a href="algebra/chinese-remainder-theorem.html">Chinese Remainder Theorem</a></li>
-<li><a href="algebra/factorial-modulo.html">Factorial modulo <span class="arithmatex">\(p\)</span></a></li>
-<li><a href="algebra/discrete-log.html">Discrete Log</a></li>
-<li><a href="algebra/primitive-root.html">Primitive Root</a></li>
-<li><a href="algebra/discrete-root.html">Discrete Root</a></li>
-<li><a href="algebra/montgomery_multiplication.html">Montgomery Multiplication</a></li>
-</ul>
-</li>
-<li><strong>Number systems</strong><ul>
-<li><a href="algebra/balanced-ternary.html">Balanced Ternary</a></li>
-<li><a href="algebra/gray-code.html">Gray code</a></li>
-</ul>
-</li>
-<li><strong>Miscellaneous</strong><ul>
-<li><a href="algebra/all-submasks.html">Enumerating submasks of a bitmask</a></li>
-<li><a href="algebra/big-integer.html">Arbitrary-Precision Arithmetic</a></li>
-<li><a href="algebra/fft.html">Fast Fourier transform</a></li>
-<li><a href="algebra/polynomial.html">Operations on polynomials and series</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="data-structures">Data Structures</h3>
-<ul>
-<li><strong>Fundamentals</strong><ul>
-<li><a href="data_structures/stack_queue_modification.html">Minimum Stack / Minimum Queue</a></li>
-<li><a href="data_structures/sparse-table.html">Sparse Table</a></li>
-</ul>
-</li>
-<li><strong>Trees</strong><ul>
-<li><a href="data_structures/disjoint_set_union.html">Disjoint Set Union</a></li>
-<li><a href="data_structures/fenwick.html">Fenwick Tree</a></li>
-<li><a href="data_structures/sqrt_decomposition.html">Sqrt Decomposition</a></li>
-<li><a href="data_structures/segment_tree.html">Segment Tree</a></li>
-<li><a href="data_structures/treap.html">Treap</a></li>
-<li><a href="data_structures/sqrt-tree.html">Sqrt Tree</a></li>
-<li><a href="data_structures/randomized_heap.html">Randomized Heap</a></li>
-</ul>
-</li>
-<li><strong>Advanced</strong><ul>
-<li><a href="data_structures/deleting_in_log_n.html">Deleting from a data structure in O(T(n)log n)</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="dynamic-programming">Dynamic Programming</h3>
-<ul>
-<li><strong>DP optimizations</strong><ul>
-<li><a href="dynamic_programming/divide-and-conquer-dp.html">Divide and Conquer DP</a></li>
-</ul>
-</li>
-<li><strong>Tasks</strong><ul>
-<li><a href="dynamic_programming/profile-dynamics.html">Dynamic Programming on Broken Profile. Problem "Parquet"</a></li>
-<li><a href="dynamic_programming/zero_matrix.html">Finding the largest zero submatrix</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="string-processing">String Processing</h3>
-<ul>
-<li><strong>Fundamentals</strong><ul>
-<li><a href="string/string-hashing.html">String Hashing</a></li>
-<li><a href="string/rabin-karp.html">Rabin-Karp for String Matching</a></li>
-<li><a href="string/prefix-function.html">Prefix function - Knuth-Morris-Pratt</a></li>
-<li><a href="string/z-function.html">Z-function</a></li>
-<li><a href="string/suffix-array.html">Suffix Array</a></li>
-<li><a href="string/aho_corasick.html">Aho-Corasick algorithm</a></li>
-</ul>
-</li>
-<li><strong>Advanced</strong><ul>
-<li><a href="string/suffix-tree-ukkonen.html">Suffix Tree</a></li>
-<li><a href="string/suffix-automaton.html">Suffix Automaton</a></li>
-<li><a href="string/lyndon_factorization.html">Lyndon factorization</a></li>
-</ul>
-</li>
-<li><strong>Tasks</strong><ul>
-<li><a href="string/expression_parsing.html">Expression parsing</a></li>
-<li><a href="string/manacher.html">Manacher's Algorithm - Finding all sub-palindromes in O(N)</a></li>
-<li><a href="string/main_lorentz.html">Finding repetitions</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="linear-algebra">Linear Algebra</h3>
-<ul>
-<li><strong>Matrices</strong><ul>
-<li><a href="linear_algebra/linear-system-gauss.html">Gauss &amp; System of Linear Equations</a></li>
-<li><a href="linear_algebra/determinant-gauss.html">Gauss &amp; Determinant</a></li>
-<li><a href="linear_algebra/determinant-kraut.html">Kraut &amp; Determinant</a></li>
-<li><a href="linear_algebra/rank-matrix.html">Rank of a matrix</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="combinatorics">Combinatorics</h3>
-<ul>
-<li><strong>Fundamentals</strong><ul>
-<li><a href="algebra/factorial-divisors.html">Finding Power of Factorial Divisor</a></li>
-<li><a href="combinatorics/binomial-coefficients.html">Binomial Coefficients</a></li>
-<li><a href="combinatorics/catalan-numbers.html">Catalan Numbers</a></li>
-</ul>
-</li>
-<li><strong>Techniques</strong><ul>
-<li><a href="combinatorics/inclusion-exclusion.html">The Inclusion-Exclusion Principle</a></li>
-<li><a href="combinatorics/burnside.html">Burnside's lemma / Pólya enumeration theorem</a></li>
-<li><a href="combinatorics/stars_and_bars.html">Stars and bars</a></li>
-<li><a href="combinatorics/generating_combinations.html">Generating all <span class="arithmatex">\(K\)</span>-combinations</a></li>
-</ul>
-</li>
-<li><strong>Tasks</strong><ul>
-<li><a href="combinatorics/bishops-on-chessboard.html">Placing Bishops on a Chessboard</a></li>
-<li><a href="combinatorics/bracket_sequences.html">Balanced bracket sequences</a></li>
-<li><a href="combinatorics/counting_labeled_graphs.html">Counting labeled graphs</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="numerical-methods">Numerical Methods</h3>
-<ul>
-<li><strong>Search</strong><ul>
-<li><a href="num_methods/ternary_search.html">Ternary Search</a></li>
-<li><a href="num_methods/roots_newton.html">Newton's method for finding roots</a></li>
-</ul>
-</li>
-<li><strong>Integration</strong><ul>
-<li><a href="num_methods/simpson-integration.html">Integration by Simpson's formula</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="geometry">Geometry</h3>
-<ul>
-<li><strong>Elementary operations</strong><ul>
-<li><a href="geometry/basic-geometry.html">Basic Geometry</a></li>
-<li><a href="geometry/segment-to-line.html">Finding the equation of a line for a segment</a></li>
-<li><a href="geometry/lines-intersection.html">Intersection Point of Lines</a></li>
-<li><a href="geometry/check-segments-intersection.html">Check if two segments intersect</a></li>
-<li><a href="geometry/segments-intersection.html">Intersection of Segments</a></li>
-<li><a href="geometry/circle-line-intersection.html">Circle-Line Intersection</a></li>
-<li><a href="geometry/circle-circle-intersection.html">Circle-Circle Intersection</a></li>
-<li><a href="geometry/tangents-to-two-circles.html">Common tangents to two circles</a></li>
-<li><a href="geometry/length-of-segments-union.html">Length of the union of segments</a></li>
-</ul>
-</li>
-<li><strong>Polygons</strong><ul>
-<li><a href="geometry/oriented-triangle-area.html">Oriented area of a triangle</a></li>
-<li><a href="geometry/area-of-simple-polygon.html">Area of simple polygon</a></li>
-<li><a href="geometry/point-in-convex-polygon.html">Check if points belong to the convex polygon in O(log N)</a></li>
-<li><a href="geometry/minkowski.html">Minkowski sum of convex polygons</a></li>
-<li><a href="geometry/picks-theorem.html">Pick's Theorem - area of lattice polygons</a></li>
-<li><a href="geometry/lattice-points.html">Lattice points of non-lattice polygon</a></li>
-</ul>
-</li>
-<li><strong>Convex hull</strong><ul>
-<li><a href="geometry/convex-hull.html">Convex hull construction</a></li>
-<li><a href="geometry/convex_hull_trick.html">Convex hull trick and Li Chao tree</a></li>
-</ul>
-</li>
-<li><strong>Sweep-line</strong><ul>
-<li><a href="geometry/intersecting_segments.html">Search for a pair of intersecting segments</a></li>
-<li><a href="geometry/point-location.html">Point location in O(log N)</a></li>
-</ul>
-</li>
-<li><strong>Miscellaneous</strong><ul>
-<li><a href="geometry/nearest_points.html">Finding the nearest pair of points</a></li>
-<li><a href="geometry/delaunay.html">Delaunay triangulation and Voronoi diagram</a></li>
-<li><a href="geometry/vertical_decomposition.html">Vertical decomposition</a></li>
-<li><a href="geometry/halfplane-intersection.html">Half-plane intersection - S&amp;I Algorithm in O(Nlog N)</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="graphs">Graphs</h3>
-<ul>
-<li><strong>Graph traversal</strong><ul>
-<li><a href="graph/breadth-first-search.html">Breadth First Search</a></li>
-<li><a href="graph/depth-first-search.html">Depth First Search</a></li>
-</ul>
-</li>
-<li><strong>Connected components, bridges, articulations points</strong><ul>
-<li><a href="graph/search-for-connected-components.html">Finding Connected Components</a></li>
-<li><a href="graph/bridge-searching.html">Finding Bridges in O(N+M)</a></li>
-<li><a href="graph/bridge-searching-online.html">Finding Bridges Online</a></li>
-<li><a href="graph/cutpoints.html">Finding Articulation Points in O(N+M)</a></li>
-<li><a href="graph/strongly-connected-components.html">Strongly Connected Components and Condensation Graph</a></li>
-<li><a href="graph/strong-orientation.html">Strong Orientation</a></li>
-</ul>
-</li>
-<li><strong>Single-source shortest paths</strong><ul>
-<li><a href="graph/dijkstra.html">Dijkstra - finding shortest paths from given vertex</a></li>
-<li><a href="graph/dijkstra_sparse.html">Dijkstra on sparse graphs</a></li>
-<li><a href="graph/bellman_ford.html">Bellman-Ford - finding shortest paths with negative weights</a></li>
-<li><a href="graph/01_bfs.html">0-1 BFS</a></li>
-<li><a href="graph/desopo_pape.html">D´Esopo-Pape algorithm</a></li>
-</ul>
-</li>
-<li><strong>All-pairs shortest paths</strong><ul>
-<li><a href="graph/all-pair-shortest-path-floyd-warshall.html">Floyd-Warshall - finding all shortest paths</a></li>
-<li><a href="graph/fixed_length_paths.html">Number of paths of fixed length / Shortest paths of fixed length</a></li>
-</ul>
-</li>
-<li><strong>Spanning trees</strong><ul>
-<li><a href="graph/mst_prim.html">Minimum Spanning Tree - Prim's Algorithm</a></li>
-<li><a href="graph/mst_kruskal.html">Minimum Spanning Tree - Kruskal</a></li>
-<li><a href="graph/mst_kruskal_with_dsu.html">Minimum Spanning Tree - Kruskal with Disjoint Set Union</a></li>
-<li><a href="graph/second_best_mst.html">Second best Minimum Spanning Tree - Using Kruskal and Lowest Common Ancestor</a></li>
-<li><a href="graph/kirchhoff-theorem.html">Kirchhoff Theorem</a></li>
-<li><a href="graph/pruefer_code.html">Prüfer code</a></li>
-</ul>
-</li>
-<li><strong>Cycles</strong><ul>
-<li><a href="graph/finding-cycle.html">Checking a graph for acyclicity and finding a cycle in O(M)</a></li>
-<li><a href="graph/finding-negative-cycle-in-graph.html">Finding a Negative Cycle in the Graph</a></li>
-<li><a href="graph/euler_path.html">Eulerian Path</a></li>
-</ul>
-</li>
-<li><strong>Lowest common ancestor</strong><ul>
-<li><a href="graph/lca.html">Lowest Common Ancestor</a></li>
-<li><a href="graph/lca_binary_lifting.html">Lowest Common Ancestor - Binary Lifting</a></li>
-<li><a href="graph/lca_farachcoltonbender.html">Lowest Common Ancestor - Farach-Colton and Bender algorithm</a></li>
-<li><a href="graph/rmq_linear.html">Solve RMQ by finding LCA</a></li>
-<li><a href="graph/lca_tarjan.html">Lowest Common Ancestor - Tarjan's off-line algorithm</a></li>
-</ul>
-</li>
-<li><strong>Flows and related problems</strong><ul>
-<li><a href="graph/edmonds_karp.html">Maximum flow - Ford-Fulkerson and Edmonds-Karp</a></li>
-<li><a href="graph/push-relabel.html">Maximum flow - Push-relabel algorithm</a></li>
-<li><a href="graph/push-relabel-faster.html">Maximum flow - Push-relabel algorithm improved</a></li>
-<li><a href="graph/dinic.html">Maximum flow - Dinic's algorithm</a></li>
-<li><a href="graph/mpm.html">Maximum flow - MPM algorithm</a></li>
-<li><a href="graph/flow_with_demands.html">Flows with demands</a></li>
-<li><a href="graph/min_cost_flow.html">Minimum-cost flow</a></li>
-<li><a href="graph/Assignment-problem-min-flow.html">Assignment problem. Solution using min-cost-flow in O (N^5)</a></li>
-</ul>
-</li>
-<li><strong>Matchings and related problems</strong><ul>
-<li><a href="graph/bipartite-check.html">Bipartite Graph Check</a></li>
-<li><a href="graph/kuhn_maximum_bipartite_matching.html">Kuhn' Algorithm - Maximum Bipartite Matching</a></li>
-</ul>
-</li>
-<li><strong>Miscellaneous</strong><ul>
-<li><a href="graph/topological-sort.html">Topological Sorting</a></li>
-<li><a href="graph/edge_vertex_connectivity.html">Edge connectivity / Vertex connectivity</a></li>
-<li><a href="graph/tree_painting.html">Tree painting</a></li>
-<li><a href="graph/2SAT.html">2-SAT</a></li>
-<li><a href="graph/hld.html">Heavy-light decomposition</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="miscellaneous">Miscellaneous</h3>
-<ul>
-<li><strong>Sequences</strong><ul>
-<li><a href="sequences/rmq.html">RMQ task (Range Minimum Query - the smallest element in an interval)</a></li>
-<li><a href="sequences/longest_increasing_subsequence.html">Longest increasing subsequence</a></li>
-<li><a href="others/maximum_average_segment.html">Search the subsegment with the maximum/minimum sum</a></li>
-<li><a href="sequences/k-th.html">K-th order statistic in O(N)</a></li>
-</ul>
-</li>
-<li><strong>Game Theory</strong><ul>
-<li><a href="game_theory/games_on_graphs.html">Games on arbitrary graphs</a></li>
-<li><a href="game_theory/sprague-grundy-nim.html">Sprague-Grundy theorem. Nim</a></li>
-</ul>
-</li>
-<li><strong>Schedules</strong><ul>
-<li><a href="schedules/schedule_one_machine.html">Scheduling jobs on one machine</a></li>
-<li><a href="schedules/schedule_two_machines.html">Scheduling jobs on two machines</a></li>
-<li><a href="schedules/schedule-with-completion-duration.html">Optimal schedule of jobs given their deadlines and durations</a></li>
-</ul>
-</li>
-<li><strong>Miscellaneous</strong><ul>
-<li><a href="others/josephus_problem.html">Josephus problem</a></li>
-<li><a href="others/15-puzzle.html">15 Puzzle Game: Existence Of The Solution</a></li>
-<li><a href="others/stern_brocot_tree_farey_sequences.html">The Stern-Brocot Tree and Farey Sequences</a></li>
-</ul>
-</li>
-</ul>
-<hr />
-
 
               
             </article>
@@ -3310,24 +2933,25 @@ Team:- Code fellas<br>
         
       </main>
       
-
-
+ 
 
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="assets/javascripts/bundle.467223ff.min.js"></script>
+      <script src="../assets/javascripts/bundle.467223ff.min.js"></script>
       
-        <script src="javascript/config.js"></script>
+        <script src="../javascript/config.js"></script>
       
-        <script src="../polyfill.io/v3/polyfill.min1162.js?features=es6"></script>
+        <script src="../../polyfill.io/v3/polyfill.min1162.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
+
+<!-- Mirrored from  firststeptocp.com/num_methods/roots_newton.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2022 18:44:38 GMT -->
 </html>
