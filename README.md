@@ -8,3 +8,9 @@
 - [@Vipiny357](https://github.com/Vipiny357)
 
 ---
+
+## Goal
+
+Make learning easy and provide all in one platform for algorithm for competetive programming
+
+---
